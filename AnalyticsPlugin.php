@@ -30,9 +30,8 @@ class AnalyticsPlugin extends Omeka_Plugin_AbstractPlugin
      */
 
     public function hookPublicHead() {
-        $woot = "TEST TEST TEST";
-        //$_options["property_id"]
-        echo get_view()->partial('config.php', array( "property_id" => $woot));
+        echo var_dump($_options);
+        echo get_view()->partial('config.php', array( "property_id" => $_options["property_id"]));
         queue_js_file('dist/omeka-analytics');
     }
     public function hookNeatlinePublicStatic($exhibit){
