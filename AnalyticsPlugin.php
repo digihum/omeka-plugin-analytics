@@ -1,9 +1,9 @@
 <?php
 
 /**
- * EU Cookie Bar plugin main class
+ * Analytics plugin main class
  *
- * @author Steve Ranford
+ * @author Tim Hollies
  */
 class AnalyticsPlugin extends Omeka_Plugin_AbstractPlugin
 {
