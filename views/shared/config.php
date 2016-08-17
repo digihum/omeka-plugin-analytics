@@ -1,5 +1,5 @@
 <script type="text/javascript">
 	window.settings = {
-		data: <?php echo "woot" ?>
+		property_id: "<?php echo $this->property_id ?>"
 	};
 </script>

@@ -6,7 +6,7 @@
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-37692171-26', 'auto');
+ga('create', window.settings.property_id, 'auto');
 ga('send', 'pageview');
 
 $("audio").on("play", function(event) {
