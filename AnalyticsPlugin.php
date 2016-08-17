@@ -30,7 +30,7 @@ class AnalyticsPlugin extends Omeka_Plugin_AbstractPlugin
      */
 
     public function hookPublicHead() {
-        echo get_view()->partial('config.php', array( "property_id" =>get_option("property_id"));
+        echo get_view()->partial('config.php', array( "property_id" => get_option("property_id")));
         queue_js_file('dist/omeka-analytics');
     }
     public function hookNeatlinePublicStatic($exhibit){
