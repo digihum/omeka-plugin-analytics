@@ -9,7 +9,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', window.settings.property_id, 'auto');
 ga('send', 'pageview');
 
-$("audio").on("play", function(event) {
+jQuery("audio").on("play", function(event) {
 	console.log("playing", event.target.currentSrc);
 	ga('send', 'event', {
     	eventCategory: 'Playing Audio',
