@@ -30,7 +30,7 @@ class AnalyticsPlugin extends Omeka_Plugin_AbstractPlugin
      */
 
     public function hookPublicHead() {
-        echo var_dump($_options);
+        echo var_dump($this->_options);
         echo get_view()->partial('config.php', array( "property_id" => $_options["property_id"]));
         queue_js_file('dist/omeka-analytics');
     }
