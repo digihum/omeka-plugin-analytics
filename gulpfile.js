@@ -7,7 +7,7 @@ var uglify = require('gulp-uglify');
 var path = "./views/shared/javascripts/analytics/";
 
 //script paths
-var jsFiles = ["analytics.js", "audio_tracking.js", "hash_tracking.js"],  
+var jsFiles = ["analytics.js", "audio_tracking.js", "hash_tracking.js", "video_tracking.js"],  
     jsDest = './views/shared/javascripts/dist';
 
 jsFiles = jsFiles.map((file) => path + file);
