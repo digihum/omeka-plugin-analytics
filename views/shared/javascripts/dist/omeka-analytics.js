@@ -30,3 +30,15 @@ jQuery(document).ready(function() {
 		});
 	});
 });
+
+
+jQuery(document).ready(function() {
+
+	window.onhashchange = function() {
+		ga('send', 'event', {
+			eventCategory: 'Hash Changed',
+			eventAction: 'click',
+			eventLabel: jQuery('#title').html()
+		});
+	};
+});
