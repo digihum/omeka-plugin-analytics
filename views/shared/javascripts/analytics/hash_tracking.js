@@ -5,7 +5,7 @@ jQuery(document).ready(function() {
 		ga('send', 'event', {
 			eventCategory: 'Hash Changed',
 			eventAction: 'click',
-			eventLabel: jQuery('#title').html()
+			eventLabel: jQuery('.title').html()
 		});
 	};
 });
