@@ -1,4 +1,6 @@
 
+// tracks audio tag events
+
 jQuery(document).ready(function() {
 
 	jQuery("audio").on("play", function(event) {

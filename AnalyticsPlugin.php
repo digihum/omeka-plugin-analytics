@@ -17,7 +17,7 @@ class AnalyticsPlugin extends Omeka_Plugin_AbstractPlugin
     );
 
     /**
-     * @var array  Options that are used in the ldap plugin.
+     * @var array  Options that are used in the analytics plugin.
      */
     protected $_options = array(
         'property_id' => 'UA-XXXXX-Y',
@@ -31,10 +31,11 @@ class AnalyticsPlugin extends Omeka_Plugin_AbstractPlugin
 
     public function hookPublicHead() {
         echo get_view()->partial('config.php', array( "property_id" => get_option("property_id")));
-        queue_js_file('dist/omeka-analytics');
+        queue_js_file('dist/omeka-analytics.min');
     }
+    
     public function hookNeatlinePublicStatic($exhibit){
-        queue_js_file('dist/omeka-analytics');
+        queue_js_file('dist/omeka-analytics.min');
     }
 
     /**

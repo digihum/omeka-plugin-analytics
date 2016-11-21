@@ -1,4 +1,8 @@
 <?php
+
+// Configuration form 
+
+
 $fields = array(
 	array(
 		'label' => 'Google Analytics Property Id',
@@ -7,6 +11,8 @@ $fields = array(
 		'required' => true
 	)
 );
+
+
 foreach ($fields as $row): ?>
 
 <div class="field">

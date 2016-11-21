@@ -1,4 +1,6 @@
 
+// tracks window hash change events
+
 jQuery(document).ready(function() {
 
 	window.onhashchange = function() {

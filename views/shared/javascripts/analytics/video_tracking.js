@@ -1,4 +1,6 @@
 
+// tracks video tag events
+
 jQuery(document).ready(function() {
 
 	jQuery("video").on("play", function(event) {
